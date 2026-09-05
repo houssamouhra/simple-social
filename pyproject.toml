@@ -1,7 +1,7 @@
 [project]
 name = "media-manager"
 version = "0.1.0"
-description = "Add your description here"
+description = "A FastAPI service for uploading and managing images and videos."
 readme = "README.md"
 authors = [
     { name = "Houssam Ouhra", email = "149302326+houssamouhra@users.noreply.github.com" }
