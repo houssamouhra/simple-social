@@ -356,7 +356,7 @@ wheels = [
 ]
 
 [[package]]
-name = "fastapi-tutorial"
+name = "media-manager"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
