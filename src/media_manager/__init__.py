@@ -1,2 +1,5 @@
+import uvicorn
+
+
 def main() -> None:
-    print("Hello from fastapi-tutorial!")
+    uvicorn.run("media_manager.main:app", reload=True)
