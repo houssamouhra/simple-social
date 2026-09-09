@@ -1,6 +1,6 @@
 import uuid
 from collections.abc import AsyncGenerator
-from datetime import datetime
+from datetime import datetime, UTC
 
 from sqlalchemy import Column, DateTime, String, Text, Uuid
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
@@ -21,7 +21,10 @@ class Post(Base):
     url = Column(String, nullable=False)
     file_type = Column(String, nullable=False)
     file_name = Column(String, nullable=False)
-    created_at = Column(DateTime, default=datetime)
+    created_at = Column(
+        DateTime(timezone=True),
+        default=lambda: datetime.now(UTC),
+    )
 
 
 engine = create_async_engine(DATABASE_URL)
