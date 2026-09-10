@@ -1,5 +1,5 @@
 [project]
-name = "media-manager"
+name = "simple-social"
 version = "0.1.0"
 description = "A FastAPI service for uploading and managing images and videos."
 readme = "README.md"
@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-media-manager = "media_manager:main"
+simple-social = "simple_social:main"
 
 [build-system]
 requires = ["uv_build>=0.12.9,<0.13.0"]
